@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background: #007bff;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    background: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#enderecos {
+    list-style: none;
+    padding: 0;
+}
+
+#enderecos li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form-endereco {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sugestoes {
+    position: absolute;
+    left: 0;
+    top: 38px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 180px;
+    overflow-y: auto;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.sugestoes div {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.sugestoes div:hover {
+    background: #f0f0f0;
+} 
